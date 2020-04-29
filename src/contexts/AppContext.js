@@ -17,7 +17,7 @@ export const appInitialState = {
   lineCount: 30,
   lineWidth: 1,
   lineSpace: 0.3,
-  lineColor: '#000',
+  lineColor: '#808080',
   marginTop: 1,
   marginRight: 1,
   marginBottom: 1,
