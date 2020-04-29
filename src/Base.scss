@@ -18,14 +18,14 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-    font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
   vertical-align: baseline;
 }
 
 body {
-    color: #eeeeee;
-    background: #2f2f2f;
+  color: #eeeeee;
+  background: #2f2f2f;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Alata', sans-serif; }
@@ -38,43 +38,44 @@ h5 { font-size: 1.5em; }
 h6 { font-size: 1.25em; }
 
 .page-section {
-    margin: 0;
+  margin: 0;
 }
 
 .page-section > .page-section-content {
-    padding: 3rem 0;
-    margin: 0 1rem;
+  padding: 3rem 0;
+  margin: 0 1rem;
 }
 
 
 @media(min-width: 600px) {
-    .page-section > .page-section-content {
-        max-width: 480px;
-        margin: 0 auto;
-    }
+  .page-section > .page-section-content {
+      max-width: 480px;
+      margin: 0 auto;
+  }
 }
 
 @media(min-width: 768px) {
-    .page-section > .page-section-content {
-        max-width: 600px;
-    }
+  .page-section > .page-section-content {
+      max-width: 600px;
+  }
 }
 
 @media(min-width: 1000px) {
-    .page-section > .page-section-content {
-        max-width: 768px;
-    }
+  .page-section > .page-section-content {
+    max-width: 768px;
+  }
 }
 
 @media(min-width: 1200px) {
-    .page-section > .page-section-content {
-        max-width: 1000px;
-    }
+  .page-section > .page-section-content {
+    max-width: 1000px;
+  }
 }
 
 @media(min-width: 1600px) {
-    .page-section > .page-section-content {
-        max-width: 1480px;
-    }
+  .page-section > .page-section-content {
+      max-width: 1480px;
+  }
 }
 
+@import '_styles'

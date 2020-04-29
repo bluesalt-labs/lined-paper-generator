@@ -3,9 +3,20 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+// Contexts and Context reducer constants
+import {
+  useAppStateValue,
+  AppProvider,
+  appInitialState,
+  appReducer
+} from 'contexts'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProvider reducer={appReducer} initialState={appInitialState}>
+      <App />
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

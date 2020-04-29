@@ -7,7 +7,7 @@ export function PrintPage(props) {
 
   return (
     <section className="PrintPage print-area-container">
-      <div class="print-area">
+      <div className="print-area">
         {children}
       </div>
     </section>

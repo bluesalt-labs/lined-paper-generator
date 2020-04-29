@@ -1,21 +1,36 @@
-import React from 'react';
+import React from 'react'
 
-import './App.scss';
+import './App.scss'
 
 import {
-  PrintPage
-} from './components'
+  useAppStateValue,
+} from 'contexts'
 
-function App() {
+import {
+  Header,
+  Settings,
+  PrintPage,
+  LinedPaper
+} from 'components'
+
+export function App() {
+  const [{ lineCount, lineWidth, lineSpace, lineColor }] = useAppStateValue()
+
+
   return (
     <div className="App">
-      
+        <Header />
+
+        <Settings />  
 
       <PrintPage>
-        <span>Test content</span>
-        <span>Test</span>
-      </PrintPage>      
-
+        <LinedPaper
+          lineCount={lineCount}
+          width={lineWidth}
+          space={lineSpace}
+          color={lineColor}
+        />
+      </PrintPage>
     </div>
   );
 }
