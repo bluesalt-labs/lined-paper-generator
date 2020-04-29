@@ -8,7 +8,7 @@ const LineItem = (props) => {
   const { width, space, color } = props
   const lineItemStyle = {
     display: 'block',
-    height: `${space}px`,
+    height: `${space}in`, /*add choice for in and px*/
     borderColor: color,
     borderBottomWidth: `${width}px`,
     borderBottomStyle: 'solid'

@@ -4,7 +4,7 @@ import './Number.scss'
 
 export function Number(props) {
   const {
-    valueKey, id, name, value, label, onChange, style,
+    valueKey, id, name, value, label, onChange, style, disabled,
     step, min, max
    } = props
 
@@ -13,6 +13,10 @@ export function Number(props) {
     const newValue = e.target.value;
 
     onChange(id ? id : valueKey, newValue)
+  }
+
+  const inputStyle = {
+    color: (disabled ? 'rgba(0,0,0,0)' : 'initial')
   }
 
   return (
@@ -26,6 +30,8 @@ export function Number(props) {
         step={step}
         min={min}
         max={max}
+        disabled={disabled}
+        style={inputStyle}
        />
        <label className="ml-2" htmlFor={name}>{label}</label>
     </div>
