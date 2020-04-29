@@ -14,7 +14,7 @@ export const SET_MARGIN_LEFT    = 'setMarginLeft'
 
 // Initial State
 export const appInitialState = {
-  lineCount: 30,
+  lineCount: 50,
   lineWidth: 1,
   lineSpace: 0.3,
   lineColor: '#808080',
