@@ -2,6 +2,8 @@ import React from 'react'
 
 import './PrintPage.scss'
 
+// Look into using a library like this: https://github.com/MrRio/jsPDF
+
 import {
   useAppStateValue,
 } from 'contexts'

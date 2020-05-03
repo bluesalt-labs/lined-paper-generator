@@ -16,12 +16,12 @@ export const SET_MARGIN_LEFT    = 'setMarginLeft'
 export const appInitialState = {
   lineCount: 50,
   lineWidth: 1,
-  lineSpace: 0.3,
+  lineSpace: 0.375,
   lineColor: '#808080',
-  marginTop: 1,
-  marginRight: 1,
-  marginBottom: 1,
-  marginLeft: 1,
+  marginTop: 0.75,
+  marginRight: 0.75,
+  marginBottom: 0.75,
+  marginLeft: 0.75,
 }
 
 // Reducer
